@@ -1,3 +1,4 @@
+<a id="back-to-top" class="icon-top back-to-top heading6" href="#"><span>Back to Top</span></a>
 
 2013-2014 Luis Mercado, Ph.D.
 <br />

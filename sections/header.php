@@ -5,7 +5,7 @@
 </div>
 
 <ul class="list-primary-nav clearfix">
-    <li><a href="/">Home</a></li>
+    <li><a href="/_base/">Home</a></li>
 
     <?
     $q = "SELECT * FROM  `nav_items` ORDER BY displayOrder asc";
@@ -18,12 +18,14 @@
         $index[$count]=$row["index"];
 
         ?>
-        <li><a href="../index.php?section=<? echo $alias[$count]; ?>"><?echo $categoryName[$count];?></a></li>
+        <li><a href="index.php?section=<? echo $alias[$count]; ?>"><?echo $categoryName[$count];?></a></li>
         <?
 
         $count++;
     }
     ?>
+    <li style="float: right; padding-top: 15px;"><fb:login-button max_rows="1" size="medium" show_faces="false" auto_logout_link="true"></fb:login-button></li>
+
 </ul>
 
 <hr />
