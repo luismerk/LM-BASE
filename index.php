@@ -7,6 +7,9 @@
 	</head>
 
 	<body>
+
+        <? include('sections/facebook_login.php'); ?>
+
 	    <header class="header content-block clearfix" >
 	        <div class="wrapper">
 	            <a id="show-nav" class="button icon-menu show-nav" href="#"><span>Menu</span></a>
@@ -20,7 +23,7 @@
 	        <div class="content-block">
 	            <div class="wrapper clearfix">
 	                <div class="content-main">
-						<? 
+						<?
 						if (strlen($thisIncludeFile) > 0) {
 						  include('sections/'.$thisIncludeFile.'.php');
 						}
